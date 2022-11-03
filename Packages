@@ -4,10 +4,10 @@ Architecture: all
 Maintainer: LiveG Technologies <hi@liveg.tech>
 Depends: bash (>= 5.0.0)
 Filename: ./pool/main/l/liveg-hello_0.1.0.deb
-Size: 2376
-MD5sum: 61cf97f75cceb151479ceea59061edf5
-SHA1: 9a8e281c4aad21267ac7d227503a68bf1947a1a0
-SHA256: cf908278acce77df47a3ce213edcad06c6c2d690d0155d02666e42d6293b386e
+Size: 2384
+MD5sum: 7966de3a729a627254095f2fe35b95cb
+SHA1: 6a707279f56dc128286e0d3e03fb0a2be1600447
+SHA256: 283b6fb69fb3c87a2786e5f82851877c755e0adaffa7b70be9ed93b79a042092
 Section: base
 Priority: optional
 Description: An example package for the LiveG APT Repository
