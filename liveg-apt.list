@@ -1,0 +1,1 @@
+deb [signed-by=/etc/apt/trusted.gpg.d/liveg-apt.gpg] https://opensource.liveg.tech/liveg-apt ./
