@@ -16,3 +16,12 @@ To update the metadata for this repo, you will need the GPG keychain for `hi@liv
 ```bash
 $ tools/update.sh
 ```
+
+## Building the `liveg-hello` package
+To build the `liveg-hello` testing package, run:
+
+```bash
+$ tools/buildhello.sh
+```
+
+This will also update the repo's metadata.
