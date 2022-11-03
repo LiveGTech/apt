@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Thu, 03 Nov 2022 12:49:06 +0000
+MD5Sum:
+ d41d8cd98f00b204e9800998ecf8427e                0 Packages
+ 0381e8f02b45592976499b31ad44f189               29 Packages.gz
+ 374fe76921393763437a3ee942776838               38 Release
+SHA1:
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 Packages
+ 8b3ea5c9eab17b5b731468485f882c7c75dbd250               29 Packages.gz
+ 7100d1095ced112a0280a271f4b3bb1cefb9157c               38 Release
+SHA256:
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 Packages
+ 6c723a9c04cce0378f4a6899a21435fe46f5108a69e8633cfa95ab53d61c752b               29 Packages.gz
+ 4b9f6c17465894ff3a3f5550502dad9fec61216ef7c014841bdea5cfd0052c71               38 Release
+SHA512:
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 Packages
+ 94f681b411285a1096461afa1cfbce19892079af99266a275a74250f5a60eae7c0e7b7957cb16aa261582b237ffcf4dc81047ea80c6468c487bae6e09653eceb               29 Packages.gz
+ 2f29f15bba9a0e94a9110d3836bd65d3ed2e251c681b53dded1d3e4a18ffd669af95bbe1f0d4518dabe250736adb5261fdeabd914dfb6d2da57d32e6f1c0ea6b               38 Release
+-----BEGIN PGP SIGNATURE-----
+
+iQJCBAEBCgAsFiEEIupmYOmuXWnlx+8qrZb5V1g+gl0FAmNjuOQOHGhpQGxpdmVn
+LnRlY2gACgkQrZb5V1g+gl1JQA//bpY2mSkJryyE14ax6zu/eRSZZRvXsCTnPPVY
+0hfUWVPLVAKywIm5EjOOPckEkpWJOFm9BsakWRr4T1d9wiayoL2wLekrzZo0Tl5M
+LLEE7BcyPHmEt/44NGoykDI70CO7Aal3ykQo39v6ufA+0uC2l+qJ9qmsyKSpJGVA
+Zkwn7/SLYTK679fCKZ48EqjQStMOZswsWlgWbPPaKU/MaAP+pmJ+VQmEeqqY3FOb
+wBZzhYUmLtsflG0SS4PfUKHY8YA7MltPF61msSV9+L1zkaaGp5GG3pXtt8zeBi6M
+wnEZ16Jozn8cOR7ckKtGCStdTAqwVF7t+Bbl/KLujsCDa70gO5DDebMMVW+FvEYU
+YeuOFYDVBNuEzFTI7Gr7+9RUnxZq7S2sgtbQNjyYOP3o0e2IIbD3qXiaddrYjfLy
+9qSflVAZIV10wxM3xVB2wfufjLQTltbFs9BsxWJNVQEaBHl/Iazq0xsLH8R7FQ2Q
+7yskfSbNzX9vvF8bUUBPDormjkP9ooTlAX+uyikI557dQBTCx5Yl7pvy+pciv9fg
+uVoD0AwumuUIdUesvJcsV+1vm04AwfqGioPa5H6DlrPkloZYWQI9USYOafI/IrSA
+lo6oWFXcGrF88LERZbaKOproTV+a3H022/8VnzqsHovQiW7u6cGn4jyAenvEMDY4
+sfkeyDo=
+=zksD
+-----END PGP SIGNATURE-----
