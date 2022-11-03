@@ -1,4 +1,4 @@
-# apt
+# LiveG APT Repository
 Our Debian APT repository for storing and distributing custom packages.
 
 ## Adding this repo to APT
