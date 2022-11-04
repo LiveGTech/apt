@@ -1,16 +1,131 @@
+Package: firmware-ov5640
+Version: 1.0
+Architecture: all
+Maintainer: Arnaud Ferraris <arnaud.ferraris@gmail.com>
+Installed-Size: 15
+Filename: ./pool/main/f/firmware-ov5640_1.0_all.deb
+Size: 4932
+MD5sum: b00e38ca5b033771869ef6fb76003368
+SHA1: c29931211dcf039472153afcc3ffed050fe052f3
+SHA256: c7822d195c14a27b0b7a5268c0cb443f32259ca8566b0d9d89e8e4a0bd449984
+Section: non-free/kernel
+Priority: optional
+Homepage: https://gitlab.com/mobian1/devices/firmware-ov5640
+Description: binary firmware for the OV5640 camera sensor driver
+ This package contains the firmware to be used with the ov5640 Linux kernel
+ driver for the OV5640 camera sensor.
+
+Package: linux-headers-5.17-sunxi64
+Source: linux-5.17-sunxi64
+Version: 5.17.1+sunxi64-1
+Architecture: arm64
+Maintainer: Arnaud Ferraris <arnaud.ferraris@gmail.com>
+Installed-Size: 47477
+Filename: ./pool/main/l/linux-headers-5.17-sunxi64_5.17.1+sunxi64-1_arm64.deb
+Size: 8029612
+MD5sum: 3d9185fd5ca2a23cae20e790ab2b1498
+SHA1: d7d329afee451df4a8bcd03ab1e6e48f52f07fe1
+SHA256: 9a4f102be0b278e5418b86d07be3135573aa5082543ecef8d71c41619d8714be
+Section: kernel
+Priority: optional
+Homepage: https://gitlab.com/mobian1/devices/sunxi64-linux
+Description: Linux kernel headers for Allwinner A64 devices
+ This package provides kernel header files for the sunxi64 kernel.
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-headers-5.19-rockchip
+Source: linux-5.19-rockchip
+Version: 5.19.17+rockchip-1
+Architecture: arm64
+Maintainer: Arnaud Ferraris <arnaud.ferraris@gmail.com>
+Installed-Size: 49177
+Filename: ./pool/main/l/linux-headers-5.19-rockchip_5.19.17+rockchip-1_arm64.deb
+Size: 8206384
+MD5sum: b421ab5dfeaf3134a40309a785fb1b7d
+SHA1: 17c7defcb27d471d59e2e0309fff9f7ba31a1d99
+SHA256: 22a78e4abe3bc22ef5d6c6a34663b84a64bb3531d06d5522754f8fda30fc7a55
+Section: kernel
+Priority: optional
+Homepage: https://gitlab.com/mobian1/devices/rockchip-linux
+Description: Linux kernel headers for Rockchip-based devices
+ This package provides kernel header files for the rockchip kernel.
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-5.17-sunxi64
+Source: linux-5.17-sunxi64
+Version: 5.17.1+sunxi64-1
+Architecture: arm64
+Maintainer: Arnaud Ferraris <arnaud.ferraris@gmail.com>
+Installed-Size: 41844
+Depends: initramfs-tools | linux-initramfs-tool, kmod, linux-base
+Provides: wireguard-modules (= 1.0.0)
+Filename: ./pool/main/l/linux-image-5.17-sunxi64_5.17.1+sunxi64-1_arm64.deb
+Size: 33114816
+MD5sum: 88826137d420e4446eaaff33d15e47e6
+SHA1: 8f633475f41e8607333d2978fb3eab04fcd6482a
+SHA256: 2532fe7148adbcd7ecbbe2755189e1eefbafd3df0f56a1ee2138cdb1ba188e47
+Section: kernel
+Priority: optional
+Homepage: https://gitlab.com/mobian1/devices/sunxi64-linux
+Description: Linux 5.17 for Allwinner A64 devices
+ The linux kernel, modules and corresponding other files for Allwinner A64
+ devices such as the PinePhone and PineTab.
+
+Package: linux-image-5.19-rockchip
+Source: linux-5.19-rockchip
+Version: 5.19.17+rockchip-1
+Architecture: arm64
+Maintainer: Arnaud Ferraris <arnaud.ferraris@gmail.com>
+Installed-Size: 41747
+Depends: initramfs-tools, kmod, linux-base
+Provides: wireguard-modules (= 1.0.0)
+Filename: ./pool/main/l/linux-image-5.19-rockchip_5.19.17+rockchip-1_arm64.deb
+Size: 30985992
+MD5sum: 60e1aaea89a08f0bdc178c12562e9359
+SHA1: 809a487389971b4557c2335052a9ec682fa79372
+SHA256: 2e78ac80ce246fa267201e0f2da7230adea24fbac53d7cd5e3963a5dd8eed2c1
+Section: kernel
+Priority: optional
+Homepage: https://gitlab.com/mobian1/devices/rockchip-linux
+Description: Linux 5.19 for Rockchip-based devices
+ The linux kernel, modules and corresponding other files for Rockchip-based
+ devices such as the PinePhone Pro and PineNote.
+
 Package: liveg-hello
 Version: 0.1.0
 Architecture: all
 Maintainer: LiveG Technologies <hi@liveg.tech>
 Depends: bash (>= 5.0.0)
 Filename: ./pool/main/l/liveg-hello_0.1.0_all.deb
-Size: 972
-MD5sum: 3dbcfd0b463c35f10585a2b643e4ef4b
-SHA1: 4e7f8763b82b6b18dc93b91a210cb6fe5d49d206
-SHA256: ede94edbed5bf5f87fb360d78f9edd87e2aefd11ba77e98113a7d0432d7db764
+Size: 976
+MD5sum: 86aab2d7a06ad4a8ead11cb5099724a5
+SHA1: 7675cc0cf88ee812c292c50398f6469aa63a253e
+SHA256: 0ac99e3750f06421d4f3d7bb8c2c5a9bc3801afba9dd790f0f740de145fc17a6
 Section: base
 Priority: optional
 Description: An example package for the LiveG APT Repository
     This package can be used to test whether the LiveG APT Repository is
     enabled, and is not designed to be a mandatory package.
+
+Package: liveg-pinephone-support
+Version: 0.1.0
+Architecture: all
+Maintainer: LiveG Technologies <hi@liveg.tech>
+Depends: linux-headers-5.17-sunxi64, linux-image-5.17-sunxi64, linux-headers-5.19-rockchip, linux-image-5.19-rockchip, firmware-ov5640, firmware-bcm80211, firmware-realtek, firmware-realtek-rtl8723cs-bt
+Suggests: initramfs-tools
+Filename: ./pool/main/l/liveg-pinephone-support_0.1.0_all.deb
+Size: 6172
+MD5sum: 3fbe5920c678ce99b2472275e3e6ca75
+SHA1: cb4ed9f5b0e92c7937a0554d9fdde1bdb2feb1a8
+SHA256: a596c92fda20525423abd67d57ff6173a97efb158a07905fcf00e5ee4390250e
+Section: nonfree
+Priority: optional
+Description: Nonfree firmware required to use LiveG OS on PINE64 PinePhone and PinePhone Pro devicess
+    This package contains nonfree firmware that is required to boot and use
+    certain aspects of LiveG OS on a PinePhone or PinePhone Pro.
+    .
+    With thanks to the Mobian project (https://mobian-project.org) for providing
+    the firmware files.
 

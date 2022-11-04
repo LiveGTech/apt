@@ -1,0 +1,14 @@
+Package: liveg-pinephone-support
+Version: 0.1.0
+Section: nonfree
+Priority: optional
+Architecture: all
+Depends: linux-headers-5.17-sunxi64, linux-image-5.17-sunxi64, linux-headers-5.19-rockchip, linux-image-5.19-rockchip, firmware-ov5640, firmware-bcm80211, firmware-realtek, firmware-realtek-rtl8723cs-bt, eg25-manager, feedbackd, modemmanager
+Suggests: initramfs-tools
+Maintainer: LiveG Technologies <hi@liveg.tech>
+Description: Nonfree firmware required to use LiveG OS on PINE64 PinePhone and PinePhone Pro devicess
+    This package contains nonfree firmware that is required to boot and use
+    certain aspects of LiveG OS on a PinePhone or PinePhone Pro.
+    .
+    With thanks to the Mobian project (https://mobian-project.org) for providing
+    the firmware files.
