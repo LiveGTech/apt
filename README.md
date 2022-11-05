@@ -10,6 +10,8 @@ $ sudo curl -s --compressed https://opensource.liveg.tech/liveg-apt/liveg-apt.li
 $ sudo apt update
 ```
 
+You should then be able to `apt install` any packages in this repo. Try installing `liveg-hello` and running `liveg-hello` to see if the LiveG APT Repository has been added correctly.
+
 ## Updating this repo's metadata
 To update the metadata for this repo, you will need the GPG keychain for `hi@liveg.tech`. With this keychain, run:
 
