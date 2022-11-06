@@ -8,7 +8,7 @@
     "source": {
         "livegAptRepo": "LiveG APT Repository",
 
-        "intro_title": "LiveG APT Repository",
+        "intro_title": " LiveG APT Repository",
         "intro_description": "This is our Debian APT repository for storing and distributing custom packages, including custom Linux kernel builds and firmware for various target devices.",
 
         "addAptRepo_title": "Adding this repository to your system",
