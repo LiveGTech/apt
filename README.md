@@ -1,6 +1,8 @@
 # LiveG APT Repository
 Our Debian APT repository for storing and distributing custom packages.
 
+Licensed by the [LiveG Open-Source Licence](LICENCE.md), except where otherwise noted.
+
 ## Adding this repo to APT
 To add this repo to APT so that you can install its packages, run the following commands:
 
