@@ -1,0 +1,21 @@
+{
+    "localeCode": "en_GB",
+    "metadata": {
+        "name": "English (United Kingdom)",
+        "nameShort": "English",
+        "textDirection": "ltr"
+    },
+    "source": {
+        "livegAptRepo": "LiveG APT Repository",
+
+        "intro_title": "LiveG APT Repository",
+        "intro_description": "This is our Debian APT repository for storing and distributing custom packages, including custom Linux kernel builds and firmware for various target devices.",
+
+        "addAptRepo_title": "Adding this repository to your system",
+        "addAptRepo_description1": "To add this repo to APT so that you can install its packages, run the following commands:",
+        "addAptRepo_description2": "You should then be able to <code>apt install</code> any packages in this repo. Try installing <code>liveg-hello</code> and running <code>liveg-hello</code> to see if the LiveG APT Repository has been added correctly.",
+
+        "searchForPackage_title": "Search for a package",
+        "searchForPackage_inputPlaceholder": "Enter the name of a package to search for"
+    }
+}

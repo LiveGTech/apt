@@ -4,7 +4,7 @@
 # 
 # Copyright (C) LiveG. All Rights Reserved.
 # 
-# https://liveg.tech/os
+# https://opensource.liveg.tech/liveg-apt
 # Licensed by the LiveG Open-Source Licence, which can be found at LICENCE.md.
 
 dpkg-scanpackages --multiversion . > Packages
