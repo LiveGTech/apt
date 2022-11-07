@@ -16,6 +16,10 @@
         "addAptRepo_description2": "You should then be able to <code>apt install</code> any packages in this repo. Try installing <code>liveg-hello</code> and running <code>liveg-hello</code> to see if the LiveG APT Repository has been added correctly.",
 
         "searchForPackage_title": "Search for a package",
-        "searchForPackage_inputPlaceholder": "Enter the name of a package to search for"
+        "searchForPackage_inputPlaceholder": "Enter the name of a package to search for",
+
+        "searchForPackage_noResults_title": "No results found",
+        "searchForPackage_noResults_description": "It seems that we don't have any packages in our APT repository that match what you searched for. Try searching for it on the Debian APT repository instead.",
+        "searchForPackage_noResults_searchDebianApt": "Search on Debian APT repo"
     }
 }
