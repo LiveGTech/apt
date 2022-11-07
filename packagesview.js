@@ -28,7 +28,7 @@ export var PackagesViewScreen = astronaut.component("PackagesViewScreen", functi
                 Heading(1) (
                     CodeSnippet() (data.Package)
                 ),
-                Paragraph() (data.Description) // TODO: Make this cut off with ellipsis
+                Paragraph() (data.Description.length > 200 ? data.Description.substring(0, 200) + "…" : data.Description)
             ))
         );
     });
