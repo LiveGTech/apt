@@ -30,12 +30,26 @@ export var PackagesViewScreen = astronaut.component("PackagesViewScreen", functi
 
     function listDisplayedPackages() {
         packageList.clear().add(
-            ...displayedPackages.map((data) => Card (
-                Heading(1) (
-                    CodeSnippet() (data.Package)
-                ),
-                Paragraph() (data.Description.length > 200 ? data.Description.substring(0, 200) + "…" : data.Description)
-            ))
+            ...displayedPackages.map(function(data) {
+                var shortDescription = data.Description.split("\n")[0];
+                var longDescription = data.Description.split("\n").slice(1).join("\n");
+
+                shortDescription = shortDescription.length > 100 ? shortDescription.substring(0, 100) + "…" : shortDescription;
+                longDescription = longDescription.length > 200 ? longDescription.substring(0, 200) + "…" : longDescription;
+
+                return Card (
+                    Heading(1) (
+                        CodeSnippet() (data.Package)
+                    ),
+                    longDescription.trim() != "" ? Paragraph (
+                        BoldTextFragment() (shortDescription),
+                        Text(" · "),
+                        Text(longDescription)
+                    ) : Paragraph (
+                        BoldTextFragment() (shortDescription)
+                    )
+                )
+            })
         );
     }
 
