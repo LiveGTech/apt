@@ -122,7 +122,7 @@ SHA1: cb4ed9f5b0e92c7937a0554d9fdde1bdb2feb1a8
 SHA256: a596c92fda20525423abd67d57ff6173a97efb158a07905fcf00e5ee4390250e
 Section: nonfree
 Priority: optional
-Description: Nonfree firmware required to use LiveG OS on PINE64 PinePhone and PinePhone Pro devicess
+Description: Nonfree firmware required to use LiveG OS on PINE64 PinePhone and PinePhone Pro devices
     This package contains nonfree firmware that is required to boot and use
     certain aspects of LiveG OS on a PinePhone or PinePhone Pro.
     .

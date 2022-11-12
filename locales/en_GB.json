@@ -8,6 +8,21 @@
     "source": {
         "livegAptRepo": "LiveG APT Repository",
 
+        "back": "Back",
+        
+        "size_bytes": {
+            "{size} == 1": "{size} byte",
+            "{size} != 1": "{size} bytes"
+        },
+        "size_kb": "{size} KB",
+        "size_mb": "{size} MB",
+        "size_gb": "{size} GB",
+        "size_tb": "{size} TB",
+        "size_kib": "{size} KiB",
+        "size_mib": "{size} MiB",
+        "size_gib": "{size} GiB",
+        "size_tib": "{size} TiB",
+
         "intro_title": " LiveG APT Repository",
         "intro_description": "This is our Debian APT repository for storing and distributing custom packages, including custom Linux kernel builds and firmware for various target devices.",
 
@@ -20,6 +35,13 @@
 
         "searchForPackage_noResults_title": "No results found",
         "searchForPackage_noResults_description": "It seems that we don't have any packages in our APT repository that match what you searched for. Try searching for it on the Debian APT repository instead.",
-        "searchForPackage_noResults_searchDebianApt": "Search on Debian APT repo"
+        "searchForPackage_noResults_searchDebianApt": "Search on Debian APT repo",
+
+        "details_version": "Version",
+        "details_arch": "Architecture",
+        "details_size": "Size",
+        "details_website": "Website",
+        "details_website_none": "(None)",
+        "details_downloadLink": "Download link"
     }
 }

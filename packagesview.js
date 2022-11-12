@@ -8,9 +8,12 @@
 */
 
 import * as astronaut from "https://opensource.liveg.tech/Adapt-UI/astronaut/astronaut.js";
+import * as markup from "https://opensource.liveg.tech/Adapt-UI/src/markup.js";
 import Fuse from "./lib/fuse.esm.js";
 
+import * as main from "./script.js";
 import * as packageData from "./packagedata.js";
+import * as detailsview from "./detailsview.js";
 
 const ADD_APT_REPO_CODE = `\
 $ curl -s --compressed https://opensource.liveg.tech/liveg-apt/KEY.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/liveg-apt.gpg > /dev/null
@@ -22,7 +25,7 @@ export var PackagesViewScreen = astronaut.component("PackagesViewScreen", functi
     // TODO: Add package searching implementation
    
     var searchInput = Input({type: "search", placeholder: _("searchForPackage_inputPlaceholder")}) ();
-    var packageList = Container() ();
+    var packageList = Cards() ();
 
     var allPackages = [];
     var displayedPackages = [];
@@ -37,10 +40,18 @@ export var PackagesViewScreen = astronaut.component("PackagesViewScreen", functi
                 shortDescription = shortDescription.length > 100 ? shortDescription.substring(0, 100) + "…" : shortDescription;
                 longDescription = longDescription.length > 200 ? longDescription.substring(0, 200) + "…" : longDescription;
 
+                var link = Link() (CodeSnippet() (data.Package));
+
+                link.on("click", function() {
+                    var screen = detailsview.DetailsViewScreen(data) ();
+
+                    main.addScreen(screen);
+
+                    screen.screenForward();
+                });
+
                 return Card (
-                    Heading(1) (
-                        CodeSnippet() (data.Package)
-                    ),
+                    Heading(2) (link),
                     longDescription.trim() != "" ? Paragraph (
                         BoldTextFragment() (shortDescription),
                         Text(" · "),
@@ -48,9 +59,11 @@ export var PackagesViewScreen = astronaut.component("PackagesViewScreen", functi
                     ) : Paragraph (
                         BoldTextFragment() (shortDescription)
                     )
-                )
+                );
             })
         );
+
+        markup.apply(packageList.get());
     }
 
     searchInput.on("input", function() {

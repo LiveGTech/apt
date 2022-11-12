@@ -16,6 +16,14 @@ astronaut.unpack();
 
 import * as packagesView from "./packagesview.js";
 
+export var packagesViewScreen = null;
+
+var screensContainer = Container() ();
+
+export function addScreen(screen) {
+    screensContainer.add(screen);
+}
+
 $g.waitForLoad().then(function() {
     return $g.l10n.selectLocaleFromResources({
         "en_GB": "locales/en_GB.json"
@@ -29,7 +37,8 @@ $g.waitForLoad().then(function() {
     $g.theme.setProperty("primarySaturation", "100%");
     $g.theme.setProperty("primaryLightness", "30%");
 
-    astronaut.render(Container (
-        packagesView.PackagesViewScreen() ()
-    ));
+    packagesViewScreen = packagesView.PackagesViewScreen() ();
+
+    addScreen(packagesViewScreen);
+    astronaut.render(screensContainer);
 });
