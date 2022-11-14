@@ -99,10 +99,10 @@ Architecture: all
 Maintainer: LiveG Technologies <hi@liveg.tech>
 Depends: bash (>= 5.0.0)
 Filename: ./pool/main/l/liveg-hello_0.1.0_all.deb
-Size: 976
-MD5sum: 86aab2d7a06ad4a8ead11cb5099724a5
-SHA1: 7675cc0cf88ee812c292c50398f6469aa63a253e
-SHA256: 0ac99e3750f06421d4f3d7bb8c2c5a9bc3801afba9dd790f0f740de145fc17a6
+Size: 1100
+MD5sum: cf52cfa9f6989b4e46fcebf6973947b0
+SHA1: 9b3c7eccb1b561d2f3ff235d11363821a2d0bee4
+SHA256: b6e63f5130e4adcab2dcd3e5552781685a75cecd188142ec7e8c5828890e97c4
 Section: base
 Priority: optional
 Description: An example package for the LiveG APT Repository
@@ -113,13 +113,13 @@ Package: liveg-pinephone-support
 Version: 0.1.0
 Architecture: all
 Maintainer: LiveG Technologies <hi@liveg.tech>
-Depends: linux-headers-5.17-sunxi64, linux-image-5.17-sunxi64, linux-headers-5.19-rockchip, linux-image-5.19-rockchip, firmware-ov5640, firmware-bcm80211, firmware-realtek, firmware-realtek-rtl8723cs-bt
+Depends: linux-headers-5.17-sunxi64, linux-image-5.17-sunxi64, linux-headers-5.19-rockchip, linux-image-5.19-rockchip, firmware-ov5640, firmware-bcm80211, firmware-realtek, firmware-realtek-rtl8723cs-bt, eg25-manager, feedbackd, modemmanager, callaudiod, mobile-broadband-provider-info, crust-firmware
 Suggests: initramfs-tools
 Filename: ./pool/main/l/liveg-pinephone-support_0.1.0_all.deb
-Size: 6172
-MD5sum: 3fbe5920c678ce99b2472275e3e6ca75
-SHA1: cb4ed9f5b0e92c7937a0554d9fdde1bdb2feb1a8
-SHA256: a596c92fda20525423abd67d57ff6173a97efb158a07905fcf00e5ee4390250e
+Size: 6232
+MD5sum: 8ea2b97a1418a8c6e1bc2fdaee9b5c02
+SHA1: 4b158fe53a47bfbf9893ef0835e7131010bf5543
+SHA256: 2c3caf959af172f71865155a0015ca8c84be1a4f1ab4abc4c4449aa5b5d03ec4
 Section: nonfree
 Priority: optional
 Description: Nonfree firmware required to use LiveG OS on PINE64 PinePhone and PinePhone Pro devices
