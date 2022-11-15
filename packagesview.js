@@ -21,9 +21,7 @@ $ sudo curl -s --compressed https://opensource.liveg.tech/liveg-apt/liveg-apt.li
 $ sudo apt update\
 `;
 
-export var PackagesViewScreen = astronaut.component("PackagesViewScreen", function(props, children) {
-    // TODO: Add package searching implementation
-   
+export var PackagesViewScreen = astronaut.component("PackagesViewScreen", function(props, children) {   
     var searchInput = Input({type: "search", placeholder: _("searchForPackage_inputPlaceholder")}) ();
     var packageList = Cards() ();
 
