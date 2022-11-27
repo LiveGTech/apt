@@ -95,6 +95,23 @@ Description: Linux 5.19 for Rockchip-based devices
 
 Package: liveg-gshell-deps
 Version: 0.1.0
+Architecture: any
+Maintainer: LiveG Technologies <hi@liveg.tech>
+Depends: libasound2, libatk-bridge2.0-0, libatk1.0-0, libatomic1, libatspi2.0-0, libbrotli1, libc6, libcairo2, libcups2, libdbus-1-3, libdouble-conversion3, libdrm2, libevent-2.1-7, libexpat1, libflac12, libfontconfig1, libfreetype6, libgbm1, libgcc-s1, libglib2.0-0, libjpeg62-turbo, libjsoncpp25, liblcms2-2, libminizip1, libnspr4, libnss3, libopenjp2-7, libopus0, libpango-1.0-0, libpng16-16, libpulse0, libre2-9, libsnappy1v5, libstdc++6, libwebp7, libwebpdemux2, libwebpmux3, libwoff1, libx11-6, libxcb1, libxcomposite1, libxdamage1, libxext6, libxfixes3, libxkbcommon0, libxml2, libxnvctrl0, libxrandr2, libxslt1.1, zlib1g, libgtk-3-0, xdg-desktop-portal-gtk
+Filename: ./pool/main/l/liveg-gshell-deps_0.1.0_any.deb
+Size: 1140
+MD5sum: 688641b45c95d45c89b5d3702585ee99
+SHA1: 65eeef3af18d5ababdb7f51184c002f4c9ddb35b
+SHA256: 0a4705518bec6485fa8c6f40d08a250739e49a6ef06788b206123afb018a2cdd
+Section: base
+Priority: optional
+Description: Dependencies needed to run gShell
+    This package doesn't install gShell by itself, but it contains all the
+    dependencies needed to run gShell. (These are the same dependencies needed
+    to run Google Chromium.)
+
+Package: liveg-gshell-deps
+Version: 0.1.0
 Architecture: all
 Maintainer: LiveG Technologies <hi@liveg.tech>
 Depends: libasound2, libatk-bridge2.0-0, libatk1.0-0, libatomic1, libatspi2.0-0, libbrotli1, libc6, libcairo2, libcups2, libdbus-1-3, libdouble-conversion3, libdrm2, libevent-2.1-7, libexpat1, libflac12, libfontconfig1, libfreetype6, libgbm1, libgcc-s1, libglib2.0-0, libjpeg62-turbo, libjsoncpp25, liblcms2-2, libminizip1, libnspr4, libnss3, libopenjp2-7, libopus0, libpango-1.0-0, libpng16-16, libpulse0, libre2-9, libsnappy1v5, libstdc++6, libwebp7, libwebpdemux2, libwebpmux3, libwoff1, libx11-6, libxcb1, libxcomposite1, libxdamage1, libxext6, libxfixes3, libxkbcommon0, libxml2, libxnvctrl0, libxrandr2, libxslt1.1, zlib1g, libgtk-3-0, xdg-desktop-portal-gtk
