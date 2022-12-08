@@ -1,3 +1,29 @@
+Package: crust-firmware
+Version: 0.5-2
+Architecture: all
+Maintainer: Nicolas Boulenguez <nicolas@debian.org>
+Installed-Size: 95
+Filename: ./pool/main/c/crust-firmware_0.5-2_all.deb
+Size: 16540
+MD5sum: 5547fc917ee90749ac37a6138f33ca05
+SHA1: 8747912b728af3261e180becef8406549fb70712
+SHA256: f4179d647a468b542c505b7bb04f8883c4d6b10bbdaed0bdd2f695542964c2da
+Section: admin
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://github.com/crust-firmware/crust
+Description: SCP firmware for Allwinner sunxi boards
+ Some System on a Chip (SoC) computers, also known as single-board,
+ embed a dedicated processor called a System Control Processor (SCP)
+ which abstracts power and system management tasks away from
+ application processors.
+ .
+ Crust replaces the proprietary firmware on the Allwinner's AR100 SCP,
+ found in sunxi boards like Banana/Orange/Lichee Pi or Pinebook/phone.
+ .
+ There is usually no need to install this package.  The same contents
+ are more conveniently available from the u-boot-sunxi package.
+
 Package: firmware-ov5640
 Version: 1.0
 Architecture: all
@@ -113,13 +139,13 @@ Package: liveg-pinephone-support
 Version: 0.1.0
 Architecture: all
 Maintainer: LiveG Technologies <hi@liveg.tech>
-Depends: linux-headers-5.17-sunxi64, linux-image-5.17-sunxi64, linux-headers-5.19-rockchip, linux-image-5.19-rockchip, firmware-ov5640, firmware-bcm80211, firmware-realtek, firmware-realtek-rtl8723cs-bt, eg25-manager, feedbackd, modemmanager, callaudiod, mobile-broadband-provider-info, crust-firmware
+Depends: linux-headers-5.17-sunxi64, linux-image-5.17-sunxi64, linux-headers-5.19-rockchip, linux-image-5.19-rockchip, firmware-ov5640, firmware-brcm80211, firmware-realtek, eg25-manager, feedbackd, modemmanager, callaudiod, mobile-broadband-provider-info, crust-firmware
 Suggests: initramfs-tools
 Filename: ./pool/main/l/liveg-pinephone-support_0.1.0_all.deb
-Size: 6232
-MD5sum: 8ea2b97a1418a8c6e1bc2fdaee9b5c02
-SHA1: 4b158fe53a47bfbf9893ef0835e7131010bf5543
-SHA256: 2c3caf959af172f71865155a0015ca8c84be1a4f1ab4abc4c4449aa5b5d03ec4
+Size: 6220
+MD5sum: d8fbdf51f3e424130aa31e43123180b6
+SHA1: 733ede0a30fa7f3586fe33f923e50b0f584ffc79
+SHA256: e1c14e7301f81c47e6012db22542725872855b079c4432e97c2737d17b579f26
 Section: nonfree
 Priority: optional
 Description: Nonfree firmware required to use LiveG OS on PINE64 PinePhone and PinePhone Pro devices
