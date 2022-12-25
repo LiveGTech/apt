@@ -16,9 +16,9 @@ import * as packageData from "./packagedata.js";
 import * as detailsview from "./detailsview.js";
 
 const ADD_APT_REPO_CODE = `\
-$ curl -s --compressed https://opensource.liveg.tech/liveg-apt/KEY.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/liveg-apt.gpg > /dev/null
-$ sudo curl -s --compressed https://opensource.liveg.tech/liveg-apt/liveg-apt.list -o /etc/apt/sources.list.d/liveg-apt.list
-$ sudo apt update\
+curl -s --compressed https://opensource.liveg.tech/liveg-apt/KEY.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/liveg-apt.gpg > /dev/null
+sudo curl -s --compressed https://opensource.liveg.tech/liveg-apt/liveg-apt.list -o /etc/apt/sources.list.d/liveg-apt.list
+sudo apt update\
 `;
 
 export var PackagesViewScreen = astronaut.component("PackagesViewScreen", function(props, children) {   
