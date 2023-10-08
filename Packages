@@ -1,3 +1,75 @@
+Package: crust-firmware
+Version: 0.5-2
+Architecture: all
+Maintainer: Nicolas Boulenguez <nicolas@debian.org>
+Installed-Size: 95
+Filename: ./pool/main/c/crust-firmware_0.5-2_all.deb
+Size: 16540
+MD5sum: 5547fc917ee90749ac37a6138f33ca05
+SHA1: 8747912b728af3261e180becef8406549fb70712
+SHA256: f4179d647a468b542c505b7bb04f8883c4d6b10bbdaed0bdd2f695542964c2da
+Section: admin
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://github.com/crust-firmware/crust
+Description: SCP firmware for Allwinner sunxi boards
+ Some System on a Chip (SoC) computers, also known as single-board,
+ embed a dedicated processor called a System Control Processor (SCP)
+ which abstracts power and system management tasks away from
+ application processors.
+ .
+ Crust replaces the proprietary firmware on the Allwinner's AR100 SCP,
+ found in sunxi boards like Banana/Orange/Lichee Pi or Pinebook/phone.
+ .
+ There is usually no need to install this package.  The same contents
+ are more conveniently available from the u-boot-sunxi package.
+
+Package: eg25-manager
+Version: 0.4.6-1
+Architecture: arm64
+Maintainer: DebianOnMobile Maintainers <debian-on-mobile-maintainers@alioth-lists.debian.net>
+Installed-Size: 183
+Depends: libc6 (>= 2.34), libcurl3-nss (>= 7.23.1), libglib2.0-0 (>= 2.37.3), libgpiod2 (>= 1.1), libgudev-1.0-0 (>= 146), libmm-glib0 (>= 0.7.991), libusb-1.0-0 (>= 2:1.0.8), modemmanager
+Filename: ./pool/main/e/eg25-manager_0.4.6-1_arm64.deb
+Size: 38568
+MD5sum: 3182f8101e898cb15f683001eb5edb41
+SHA1: ca5ece58cacfa842c105a002f61b67e528b70511
+SHA256: 27007e2a6bdd74d528e93a5fb351e11f9114d32da3a8069dc82d688530e43da4
+Section: net
+Priority: optional
+Homepage: https://gitlab.com/mobian1/eg25-manager
+Description: Manager daemon for the Quectel EG25 modem
+ eg25-manager is a daemon aimed at configuring and monitoring the Quectel EG25
+ modem on a running system. It is used on the PinePhone (Pro) and performs the
+ following functions:
+   * power on/off
+   * startup configuration using AT commands
+   * AGPS data upload
+   * status monitoring (and restart if it becomes unavailable)
+
+Package: eg25-manager
+Version: 0.4.6-1
+Architecture: amd64
+Maintainer: DebianOnMobile Maintainers <debian-on-mobile-maintainers@alioth-lists.debian.net>
+Installed-Size: 147
+Depends: libc6 (>= 2.34), libcurl3-nss (>= 7.23.1), libglib2.0-0 (>= 2.37.3), libgpiod2 (>= 1.1), libgudev-1.0-0 (>= 146), libmm-glib0 (>= 0.7.991), libusb-1.0-0 (>= 2:1.0.8), modemmanager
+Filename: ./pool/main/e/eg25-manager_0.4.6-1_amd64.deb
+Size: 40828
+MD5sum: 25533e6b5beda37bc507442eba87ee9b
+SHA1: 27deae703ca21d70aa6a9598059d2ac41fbd347e
+SHA256: 5aed85d67e1cad928217cfebdefc9e04ec50a790aaf7efce43c34aaad4d71c4e
+Section: net
+Priority: optional
+Homepage: https://gitlab.com/mobian1/eg25-manager
+Description: Manager daemon for the Quectel EG25 modem
+ eg25-manager is a daemon aimed at configuring and monitoring the Quectel EG25
+ modem on a running system. It is used on the PinePhone (Pro) and performs the
+ following functions:
+   * power on/off
+   * startup configuration using AT commands
+   * AGPS data upload
+   * status monitoring (and restart if it becomes unavailable)
+
 Package: firmware-ov5640
 Version: 1.0
 Architecture: all
@@ -114,10 +186,10 @@ Architecture: all
 Maintainer: LiveG Technologies <hi@liveg.tech>
 Depends: bash (>= 5.0.0)
 Filename: ./pool/main/l/liveg-hello_0.1.0_all.deb
-Size: 976
-MD5sum: 86aab2d7a06ad4a8ead11cb5099724a5
-SHA1: 7675cc0cf88ee812c292c50398f6469aa63a253e
-SHA256: 0ac99e3750f06421d4f3d7bb8c2c5a9bc3801afba9dd790f0f740de145fc17a6
+Size: 1100
+MD5sum: cf52cfa9f6989b4e46fcebf6973947b0
+SHA1: 9b3c7eccb1b561d2f3ff235d11363821a2d0bee4
+SHA256: b6e63f5130e4adcab2dcd3e5552781685a75cecd188142ec7e8c5828890e97c4
 Section: base
 Priority: optional
 Description: An example package for the LiveG APT Repository
