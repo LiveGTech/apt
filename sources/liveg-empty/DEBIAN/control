@@ -1,0 +1,9 @@
+Package: liveg-empty
+Version: 0.1.0
+Section: base
+Priority: optional
+Architecture: all
+Maintainer: LiveG Technologies <hi@liveg.tech>
+Description: An empty package with no dependencies
+    This is to work around an issue with LiveG OS's update system for versions
+    0.2.0 and 0.2.1, where at least one package was required.

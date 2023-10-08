@@ -93,6 +93,21 @@ Description: Linux 5.19 for Rockchip-based devices
  The linux kernel, modules and corresponding other files for Rockchip-based
  devices such as the PinePhone Pro and PineNote.
 
+Package: liveg-empty
+Version: 0.1.0
+Architecture: all
+Maintainer: LiveG Technologies <hi@liveg.tech>
+Filename: ./pool/main/l/liveg-empty_0.1.0_all.deb
+Size: 812
+MD5sum: 58fd266b167d39bf4e387603082dca81
+SHA1: 446717e18b5a733c58e227cf83f68b517ba607e9
+SHA256: 9f9f34000b51ba8e73cbe37891dfcffcd931217446bbd0251ccca510dfe53249
+Section: base
+Priority: optional
+Description: An empty package with no dependencies
+    This is to work around an issue with LiveG OS's update system for versions
+    0.2.0 and 0.2.1, where at least one package was required.
+
 Package: liveg-hello
 Version: 0.1.0
 Architecture: all
@@ -113,13 +128,13 @@ Package: liveg-pinephone-support
 Version: 0.1.0
 Architecture: all
 Maintainer: LiveG Technologies <hi@liveg.tech>
-Depends: linux-headers-5.17-sunxi64, linux-image-5.17-sunxi64, linux-headers-5.19-rockchip, linux-image-5.19-rockchip, firmware-ov5640, firmware-bcm80211, firmware-realtek, firmware-realtek-rtl8723cs-bt
+Depends: linux-headers-5.17-sunxi64, linux-image-5.17-sunxi64, linux-headers-5.19-rockchip, linux-image-5.19-rockchip, firmware-ov5640, firmware-bcm80211, firmware-realtek, firmware-realtek-rtl8723cs-bt, eg25-manager, feedbackd, modemmanager, callaudiod, mobile-broadband-provider-info, crust-firmware
 Suggests: initramfs-tools
 Filename: ./pool/main/l/liveg-pinephone-support_0.1.0_all.deb
-Size: 6172
-MD5sum: 3fbe5920c678ce99b2472275e3e6ca75
-SHA1: cb4ed9f5b0e92c7937a0554d9fdde1bdb2feb1a8
-SHA256: a596c92fda20525423abd67d57ff6173a97efb158a07905fcf00e5ee4390250e
+Size: 6220
+MD5sum: f0f1c632edd7d387442d52d7f9be7c36
+SHA1: 61978a010dcdcc9ee4fd44e7bb7251df9034284f
+SHA256: b4149b2701187ca260e649b2c51b5e4964f7072e9091cb0dcea6ec61a87bf802
 Section: nonfree
 Priority: optional
 Description: Nonfree firmware required to use LiveG OS on PINE64 PinePhone and PinePhone Pro devices
