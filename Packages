@@ -200,13 +200,13 @@ Package: liveg-pinephone-support
 Version: 0.1.0
 Architecture: all
 Maintainer: LiveG Technologies <hi@liveg.tech>
-Depends: linux-headers-5.17-sunxi64, linux-image-5.17-sunxi64, linux-headers-5.19-rockchip, linux-image-5.19-rockchip, firmware-ov5640, firmware-bcm80211, firmware-realtek, firmware-realtek-rtl8723cs-bt, eg25-manager, feedbackd, modemmanager, callaudiod, mobile-broadband-provider-info, crust-firmware
+Depends: linux-headers-5.17-sunxi64, linux-image-5.17-sunxi64, linux-headers-5.19-rockchip, linux-image-5.19-rockchip, firmware-ov5640, firmware-brcm80211, firmware-realtek, eg25-manager, feedbackd, modemmanager, callaudiod, mobile-broadband-provider-info, crust-firmware
 Suggests: initramfs-tools
 Filename: ./pool/main/l/liveg-pinephone-support_0.1.0_all.deb
 Size: 6220
-MD5sum: f0f1c632edd7d387442d52d7f9be7c36
-SHA1: 61978a010dcdcc9ee4fd44e7bb7251df9034284f
-SHA256: b4149b2701187ca260e649b2c51b5e4964f7072e9091cb0dcea6ec61a87bf802
+MD5sum: bc76e1c4c4904e3a59d7ac86a950f9c8
+SHA1: 60ae47b4c3adf27e8c44df0f4115df8dc4b76cef
+SHA256: 7e4c20bb1a0f454977e3f7177c5a294d4349327a389c6d3c7f76772175398b0e
 Section: nonfree
 Priority: optional
 Description: Nonfree firmware required to use LiveG OS on PINE64 PinePhone and PinePhone Pro devices
